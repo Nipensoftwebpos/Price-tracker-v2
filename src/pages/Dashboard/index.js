@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './dashboard.scss'
 
 import DashboardComp from '../../components/DashboardComp'
 import Layout from '../../components/Layout'
-function Dashboard() {
+function DashboardLayout() {
 
     return (
-        <div>
-            <Layout>
-                <DashboardComp />
-            </Layout>
-        </div>
+        <Layout>
+           <DashboardComp/>
+        </Layout>
     )
 }
 
-export default Dashboard
+export default DashboardLayout

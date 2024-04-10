@@ -3,6 +3,7 @@ import Header from '../common/Header/Header'
 import Siderbar from '../common/Sidebar/Siderbar'
 import './layout.scss'
 const Layout = ({ children }) => {
+    console.log('common Component layout: ',children)
     const [isActive, setIsActive] = useState(false)
     return (
         <div>
