@@ -8,20 +8,24 @@ import CompetitiorIcon from '../../../assets/icon/CompetitiorIcon';
 import IntegrationIcon from '../../../assets/icon/IntegrationIcon';
 import ScreplogIcon from '../../../assets/icon/ScreplogIcon';
 import ReportsIcon from '../../../assets/icon/ReportsIcon';
+import { useLocation, useRoutes } from 'react-router-dom';
+
 function Siderbar({isActive}) {
+    const location = useLocation();
+    console.log(location.pathname)
     return (
         <div className='sidebar-wrapper'>
             <div className="sidebar" style={{right:isActive ? '15px' : '-500px'}}>
                 <div>
                     <Nav className="flex-column sidebar-wrapper-flex">
-                        <Nav.Link href="#home" className='active'><DashboardIcon /> <span>Dashboard</span></Nav.Link>
-                        <Nav.Link href="#about"><ProductIcon /> <span>Products</span></Nav.Link>
-                        <Nav.Link href="#services"><CompanyIcon /> <span>Company</span></Nav.Link>
-                        <Nav.Link href="#contact"><CompetitiorIcon /> <span>Competitor</span></Nav.Link>
-                        <Nav.Link href="#contact"><IntegrationIcon /> <span>integration</span></Nav.Link>
-                        <Nav.Link href="#contact"><ScreplogIcon /> <span>Scrap Log</span></Nav.Link>
-                        <Nav.Link href="#contact"><ReportsIcon /> <span>Reports</span></Nav.Link>
-                        <Nav.Link href="#contact"><ReportsIcon /> <span>Accounts</span></Nav.Link>
+                        <Nav.Link href="/" className={location.pathname === '/' ? 'active' : ''}><DashboardIcon /> <span>Dashboard</span></Nav.Link>
+                        <Nav.Link href="/product" className={location.pathname === '/product' ? 'active' : ''}><ProductIcon /> <span>Products</span></Nav.Link>
+                        <Nav.Link className={location.pathname === '/company' ? 'active' : ''} href="/company"><CompanyIcon /> <span>Company</span></Nav.Link>
+                        <Nav.Link className={location.pathname === '/competitor' ? 'active' : ''} href="/competitor"><CompetitiorIcon /> <span>Competitor</span></Nav.Link>
+                        <Nav.Link className={location.pathname === '/integration' ? 'active' : ''} href="/integration"><IntegrationIcon /> <span>integration</span></Nav.Link>
+                        <Nav.Link className={location.pathname === '/scraplog' ? 'active' : ''} href="/scraplog"><ScreplogIcon /> <span>Scrap Log</span></Nav.Link>
+                        <Nav.Link className={location.pathname === '/report' ? 'active' : ''} href="/report"><ReportsIcon /> <span>Reports</span></Nav.Link>
+                        <Nav.Link className={location.pathname === '/account' ? 'active' : ''} href="/account"><ReportsIcon /> <span>Accounts</span></Nav.Link>
                     </Nav>
                 </div>
                 <div className='sidebar-user-login'>
