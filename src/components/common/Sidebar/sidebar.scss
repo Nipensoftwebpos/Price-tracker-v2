@@ -1,0 +1,149 @@
+// Sidebar.scss
+.sidebar {
+    display: flex;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 353px;
+    height: calc(100% - 120px); // Reduce height by 81px
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #FFFFFF; // Dark background color
+    padding-top: 40px; // Adjust top padding for navbar height
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.5s;
+    @media (max-width:1440px) {
+        width: 100%;
+        max-width: 300px;
+        padding-top: 5px;
+    }
+    @media (max-width:768px) {
+        width: 100%;
+        max-width: 60px;
+        padding-top: 5px;
+    }
+    @media (max-width:1024px) {
+        right: 15px;
+        left: auto;
+    }
+    .sidebar-wrapper-flex{
+        @media (max-width:768px){
+            gap: 30px;
+        }
+    }
+    .nav-link {
+        width: 100%;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-transform: capitalize;
+        font-size: 18px;
+        padding: 15px 0px;
+        font-weight: 700;
+        color: #767682; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+        transition: background-color 0.3s; 
+        padding-left: 30px;
+        @media (max-width:1440px) {
+            padding-top: 12px ;
+            padding-bottom: 12px ;
+        }
+        @media (max-width:768px) {
+            padding-left: 14px;
+            padding-top: 6px ;
+            padding-bottom: 6px ;
+            max-width: 100%;
+        }
+        span{
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+        .svg-hover{
+            @media (max-width:768px) {
+                width: 25px;
+            }
+        }
+        &.svg-hover {
+          path {
+            fill: #767682;
+          }
+        }
+        &:hover {
+          background-color: #f8f7ff; // Background color on hover
+          border-left: 5px solid #4a46e2;
+          color: #4a46e2;
+          border-radius: 0px 10px 10px 0px;
+          .svg-hover {
+            path {
+              fill: #4a46e2; // Change SVG fill color on hover
+            }
+          }
+        }
+      }
+      .sidebar-user-login{
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        height: auto;
+        border-radius: 10px;
+        background-color: #F8F7FF;
+        margin-bottom: 20px;
+        @media (max-width:768px) {
+            padding: 10px;
+        }
+        .nav-user-section-wrapper{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: #97A3B5;
+            @media (max-width:768px) {
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                object-fit: cover;
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+        }
+        .nav-user-text-wrapper{
+            h5{
+                color: #4A46E2;
+                font-size: 16px;
+                font-weight: 800;
+                margin-bottom: 0px;
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+            p{
+                color: #4A46E2;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 0px;
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+        }
+      }
+  }
+  .sidebar .nav-link.active{
+    background-color: #f8f7ff; // Background color on hover
+    border-left: 5px solid #4a46e2;
+    color: #4a46e2;
+    border-radius: 0px 10px 10px 0px;
+    .svg-hover {
+        path {
+          fill: #4a46e2; // Change SVG fill color on hover
+        }
+      }
+}

@@ -1,0 +1,106 @@
+.dashboard-main-comp{
+.col{
+    @media (max-width:1024px) {
+        margin-top: 10px;
+    }
+}
+    .card{
+        background-color: #fff;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 5px 14px 0px #0000000D;
+       
+        .card-title{
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        .card-subtitle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 7px;
+            color: #7B7B87;
+            font-size: 14px;
+            font-weight: 600;
+            @media (max-width:1280px) {
+                font-size: 10px;
+            }
+            span{
+                background-color: #F6F6FE80;
+                width: auto;
+                padding: 6px 14px;
+                border-radius: 20px;
+                color:#000; 
+        }
+    }
+        .card-icon-bg{
+            background-color: #4A46E2;
+            border-radius: 5px;
+            padding:  7px;
+        }
+    }
+    .col-sec-contain{
+        height: fit-content;
+        margin-right: 15px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       @media (max-width:576px) {
+        margin:10px;
+       }
+        .sec-main-card-one{
+            background-color: transparent;
+            border-radius: 10px;
+            border: none;          
+            box-shadow: none;  
+            .card-body{
+                padding-bottom: 0px;
+            }
+        }
+        .sec-main-card{
+        background-color: #F9F9F9;
+        border-radius: 20px;
+        border: none;
+        }
+        .card-title{
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            .card-title-more{
+                font-size: 14px;
+                font-weight: 500;
+                span{
+                    color: #48BB78;
+                }
+            }
+        }
+        .competitor-title{
+            display: flex;
+            justify-content: space-between;      
+            @media (max-width:1280px) {
+                font-size:14px;
+            }  
+        }
+
+    }
+    .position-sec-icon{
+        margin-top: 20px;
+        .card-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            .card-title-more{
+                font-size: 14px;
+                font-weight: 500;
+                span{
+                    color: #48BB78;
+                }
+            }
+        }
+    }
+}
