@@ -1,0 +1,119 @@
+
+    .modal{
+        .modal-content{
+            .modal-footer{
+                border-top: none;
+            }
+            .btn-close{
+                background: url('../../../../public/assets/images/error1.svg');
+                background-repeat: no-repeat;
+            }
+            .modal-title{
+                font-size: 20px;
+                font-weight: 900;
+                letter-spacing: 2%;
+
+                .modal-upload-icons-styling{
+                    width: 54px;
+                    height: 54px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #4A46E2;
+                    border-radius: 100%;
+                }
+            }
+            .modal-body{
+                .upload-drag-drop-wrapper{
+                    .upload-files{
+                        position: relative;
+                        width: 100%;
+                        height: 216px;
+                       display: flex;
+                    //    justify-content: center;
+                       align-items: center;
+                       flex-direction: column;
+                        border-radius: 20px;
+                        background-color: #F9F9F9;
+                        border: 2px dashed #DDDDDD;
+                        .upload-icon-wrapper{
+                            width: 90px;
+                            height: 90px;
+                            margin:20px 0px 10px 0px;
+                            color: #fff;
+                            font-size: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 100%;
+                            background-color: #394C60;
+                        }
+                        .upload-text{
+                            font-family: "Roboto", sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            margin-bottom: 2px;
+                            letter-spacing: 2%;
+                            line-height: 30px;
+                        }
+                        .upload-click{
+                            font-size: 14px;
+                            letter-spacing: 2%;
+                            line-height: 26px;
+                            color: #777777;
+                            margin-bottom: 0px;
+                        }
+                        button{
+                            padding: 10px 15px;
+                            position: absolute;
+                            bottom: -18px;
+                            &:hover{
+                               svg{
+                                path{
+                                    fill: #4A46E2;
+                                }
+                               }
+                                font-weight: 700;
+                            }
+                        }
+                        
+                    }
+                }
+                .upload-files-list{
+                    .files-list-text{
+                        margin-top: 30px;
+                        font-weight: 900;
+                    }
+                    .files-list{
+                        width: 100%;
+                        height: auto;
+                        font-weight: 900;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding:10px 20px;
+                        border: 1px solid #DDD;
+                        border-radius: 10px;
+                        background-color: #F9F9F9;
+                    }
+                    .list-delete-button{
+                        border: 1px solid #DDD;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        padding: 5px;
+                        &:hover{
+                            border: 1px solid red;
+                            svg{
+                                path{
+                                    fill: red;
+                                }
+                            }
+                        }
+                        svg{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }

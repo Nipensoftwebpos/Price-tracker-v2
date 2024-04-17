@@ -1,12 +1,11 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import TableComponent from '../../components/common/TableComponent'
 
 const Competitor = () => {
   return (
     <Layout>
-      <h1>
-      Competitor Page
-    </h1>
+      <TableComponent/>
     </Layout>
   )
 }

@@ -1,0 +1,19 @@
+.pagination{
+    .active{
+        .page-link{
+            width: 34px;
+            height: 34px;
+            background-color: #4A46E2;
+            border-radius: 100%;
+            color: white;
+            text-align: center;
+        }
+    }
+    .page-link{
+        border: none;
+        font-weight: 700;
+        background-color: transparent;
+        color: black;
+       
+    }
+}

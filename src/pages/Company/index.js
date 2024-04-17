@@ -1,12 +1,11 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import TableComponent from '../../components/common/TableComponent'
 
 const Company = () => {
   return (
     <Layout>
-      <h1>
-      Company Page
-    </h1>
+      <TableComponent/>
     </Layout>
   )
 }

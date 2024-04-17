@@ -31,7 +31,7 @@ const DashboardComp = () => {
                 },
                 chartOptions: {
                     chart: {
-                        height: 300
+                        height: 250
                     },
                     subtitle: {
                         text: null
@@ -57,7 +57,7 @@ const DashboardComp = () => {
                 <Row>
                     <Col sm={6}>
                         <Row>
-                            <Col className="col-12 col-lg-6">
+                            <Col className="col-12 col-lg-6 responsive-card">
                                 <Card>
                                     <Card.Body>
                                         <Card.Title>Product <div className="card-icon-bg"><ProductCardIcon /></div></Card.Title>

@@ -1,7 +1,7 @@
 // Sidebar.scss
 .sidebar {
     display: flex;
-    z-index: 9999;
+    z-index: 1040;
     flex-direction: column;
     justify-content: space-between;
     width: 353px;
@@ -14,9 +14,12 @@
     padding-top: 40px; // Adjust top padding for navbar height
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all 0.5s;
+    @media (max-width:1500px) {
+        width: 305px;
+    }
     @media (max-width:1440px) {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
         padding-top: 5px;
     }
     @media (max-width:768px) {
@@ -43,6 +46,7 @@
         font-size: 18px;
         padding: 15px 0px;
         font-weight: 700;
+        margin: 5px 0px;
         color: #767682; 
         border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
         transition: background-color 0.3s; 
@@ -50,6 +54,7 @@
         @media (max-width:1440px) {
             padding-top: 12px ;
             padding-bottom: 12px ;
+            font-size: 14px;
         }
         @media (max-width:768px) {
             padding-left: 14px;
@@ -63,6 +68,9 @@
             }
         }
         .svg-hover{
+            @media (max-width:1440px) {
+                width: 20px;
+            }
             @media (max-width:768px) {
                 width: 25px;
             }
@@ -93,6 +101,10 @@
         border-radius: 10px;
         background-color: #F8F7FF;
         margin-bottom: 20px;
+        @media (max-width:1440px) {
+            padding: 10px 5px;
+            max-width: 90%;
+        }
         @media (max-width:768px) {
             padding: 10px;
         }
@@ -101,6 +113,10 @@
             height: 50px;
             border-radius: 100%;
             background-color: #97A3B5;
+            @media (max-width:1440px) {
+                width: 40px;
+                height: 40px;
+            }
             @media (max-width:768px) {
                 display: none;
             }
@@ -120,6 +136,9 @@
                 font-size: 16px;
                 font-weight: 800;
                 margin-bottom: 0px;
+                @media (max-width:1440px) {
+                    font-size: 12px;
+                }
                 @media (max-width:768px) {
                     display: none;
                 }
@@ -129,6 +148,9 @@
                 font-size: 14px;
                 font-weight: 600;
                 margin-bottom: 0px;
+                @media (max-width:1440px) {
+                    font-size: 12px;
+                }
                 @media (max-width:768px) {
                     display: none;
                 }

@@ -8,14 +8,14 @@ import CompetitiorIcon from '../../../assets/icon/CompetitiorIcon';
 import IntegrationIcon from '../../../assets/icon/IntegrationIcon';
 import ScreplogIcon from '../../../assets/icon/ScreplogIcon';
 import ReportsIcon from '../../../assets/icon/ReportsIcon';
-import { useLocation, useRoutes } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-function Siderbar({isActive}) {
+function Siderbar({isActive,isMobile}) {
     const location = useLocation();
     console.log(location.pathname)
     return (
         <div className='sidebar-wrapper'>
-            <div className="sidebar" style={{right:isActive ? '15px' : '-500px'}}>
+            <div className="sidebar" style={isMobile ? {left:isActive ? '15px' : '-500px'} : {}}>
                 <div>
                     <Nav className="flex-column sidebar-wrapper-flex">
                         <Nav.Link href="/" className={location.pathname === '/' ? 'active' : ''}><DashboardIcon /> <span>Dashboard</span></Nav.Link>
