@@ -22,12 +22,40 @@
   .main-content {
     grid-area: main-content;
   }
-  @media (max-width:1440px){
+  @media (max-width:1500px){
     .grid-layout{
-        grid-template-columns: 300px; 
+        grid-template-columns:305px; 
     }
   }
-  @media screen and (max-width: 1024px) {
+  @media (max-width:1440px){
+    .grid-layout{
+        grid-template-columns: 248px; 
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .grid-layout {
+      grid-template-columns: 250px;
+    grid-gap: 20px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'header header'
+      'sidebar-content main-content';
+    }
+  }
+  @media screen and (max-width: 1360px) {
+    .grid-layout {
+     
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'header'
+        'main-content';
+    grid-gap: 0px;
+    }
+    .main-content{
+      margin-top: 20px;
+  }
+  }
+  @media screen and (max-width: 1200px) {
     .grid-layout {
       grid-template-columns: 1fr;
       grid-template-areas:

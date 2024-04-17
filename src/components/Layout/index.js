@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
 
     useEffect(() => {
       const checkIfMobile = () => {
-        const mobileMediaQuery = window.matchMedia('(max-width: 1024px)');
+        const mobileMediaQuery = window.matchMedia('(max-width: 1440px)');
         setIsMobile(mobileMediaQuery.matches);
       };
   
